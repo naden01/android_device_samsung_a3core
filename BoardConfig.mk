@@ -149,7 +149,7 @@ TW_MTP_DEVICE := "Galaxy A03 Core"
 # Kernel module loading for touch, battery etc
 #TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
 # Kernel module
-TW_LOAD_VENDOR_MODULES := "incrementalfs.ko kheaders.ko trace_irqsoff_bytedancy.ko trace_noschedule_bytedancy.ko trace_runqlat_bytedancy.ko"
+TW_LOAD_VENDOR_MODULES := "nt36xxx_ss.ko"
 
 # Debugging
 TWRP_EVENT_LOGGING := true
