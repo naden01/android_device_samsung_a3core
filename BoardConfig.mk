@@ -148,9 +148,8 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_MTP_DEVICE := "Galaxy A03 Core"
 # Kernel module loading for touch, battery etc
 #TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
-TW_LOAD_VENDOR_MODULES := true
-TW_LOAD_VENDOR_BOOT_MODULES := true
-TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
+# Kernel module
+TW_LOAD_VENDOR_MODULES := "incrementalfs.ko kheaders.ko trace_irqsoff_bytedancy.ko trace_noschedule_bytedancy.ko trace_runqlat_bytedancy.ko"
 
 
 # Making the recovery.img smaller
